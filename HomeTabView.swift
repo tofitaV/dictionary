@@ -28,7 +28,7 @@ struct WordGridView: View {
         .onAppear {
             wordList.loadWordsFromCoreData(context: managedObjectContext)
         }
-        .searchable(text: $searchText   )
+        .searchable(text: $searchText)
     }
 
     var searchResults: [Word] {
